@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,7 +26,7 @@ body::before{content:'';position:fixed;top:-200px;left:50%;transform:translateX(
 .ticker-wrap{background:var(--navy-mid);border-bottom:1px solid var(--border);padding:10px 0;overflow:hidden;position:relative;z-index:99;}
 .ticker-label{display:inline-block;background:var(--saffron);color:white;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:4px 14px;border-radius:3px;margin-right:20px;flex-shrink:0;}
 .ticker-track{display:flex;align-items:center;width:100%;}
-.ticker-content{display:flex;align-items:center;animation:ticker 75s linear infinite;white-space:nowrap;}
+.ticker-content{display:flex;align-items:center;animation:ticker 90s linear infinite;white-space:nowrap;}
 .ticker-content a{color:var(--saffron-light);font-size:13px;font-weight:500;text-decoration:none;margin-right:48px;}
 .ticker-content a:hover{color:white;}
 .ticker-content a::before{content:'● ';font-size:8px;margin-right:6px;color:var(--saffron);}
@@ -64,13 +63,13 @@ nav{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-co
 .hero-sub strong{color:var(--off-white);}
 
 /* DOMAIN VALUE COUNTER */
-.value-counter{display:inline-flex;flex-direction:column;align-items:center;background:rgba(0,180,216,0.1);border:1px solid rgba(0,180,216,0.4);border-radius:14px;padding:14px 32px;margin-bottom:28px;}
+.value-counter{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;background:rgba(0,180,216,0.1);border:1px solid rgba(0,180,216,0.4);border-radius:20px;padding:24px 20px;margin-bottom:0;width:260px;min-height:120px;box-sizing:border-box;}
 .value-label{font-size:10px;color:#00B4D8;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:4px;}
 .value-num{font-family:'Syne',sans-serif;font-size:22px;font-weight:800;color:#4dff88;}
 .value-sub{font-size:10px;color:var(--muted);margin-top:2px;}
 
 /* PRICE BLOCK */
-.price-block{display:inline-flex;flex-direction:column;align-items:center;gap:6px;background:var(--card-bg);border:1px solid var(--border);border-radius:20px;padding:24px 44px;margin-bottom:28px;}
+.price-block{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;background:var(--card-bg);border:1px solid var(--border);border-radius:20px;padding:24px 20px;margin-bottom:0;width:260px;min-height:120px;box-sizing:border-box;}
 .price-label{font-size:11px;font-weight:600;color:var(--muted);letter-spacing:2px;text-transform:uppercase;}
 .price-bin{font-family:'Syne',sans-serif;font-size:clamp(36px,6vw,56px);font-weight:800;color:var(--saffron);letter-spacing:-2px;line-height:1;}
 .price-offer{font-size:14px;color:var(--muted);}
@@ -81,15 +80,17 @@ nav{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-co
 
 /* CTA */
 .cta-group{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bottom:14px;}
-.btn-primary{display:inline-block;background:linear-gradient(135deg,var(--saffron),#FF9A44);color:var(--white);font-weight:700;font-size:15px;padding:16px 36px;border-radius:50px;text-decoration:none;letter-spacing:0.3px;transition:transform 0.2s,box-shadow 0.2s;box-shadow:0 4px 24px rgba(255,107,0,0.35);}
+.btn-primary{display:inline-block;background:linear-gradient(135deg,var(--saffron),#FF9A44);color:var(--white);font-weight:700;font-size:15px;padding:14px 0;border-radius:50px;width:180px;text-align:center;text-decoration:none;letter-spacing:0.3px;transition:transform 0.2s,box-shadow 0.2s;box-shadow:0 4px 24px rgba(255,107,0,0.35);}
 .btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(255,107,0,0.5);}
-.btn-secondary{display:inline-block;background:transparent;color:var(--white);font-weight:600;font-size:15px;padding:16px 36px;border-radius:50px;text-decoration:none;border:1px solid rgba(255,255,255,0.2);transition:border-color 0.2s,background 0.2s;}
+.btn-secondary{display:inline-block;background:transparent;color:var(--white);font-weight:600;font-size:15px;padding:14px 0;border-radius:50px;width:180px;text-align:center;text-decoration:none;border:1px solid rgba(255,255,255,0.2);transition:border-color 0.2s,background 0.2s;}
 .btn-secondary:hover{border-color:var(--saffron);background:rgba(255,107,0,0.06);}
 .contact-note{font-size:12px;color:var(--muted);}
-.btn-sedo{display:inline-block;background:linear-gradient(135deg,#0055aa,#0088ff);color:var(--white);font-weight:700;font-size:15px;padding:16px 28px;border-radius:50px;text-decoration:none;transition:transform 0.2s,box-shadow 0.2s;box-shadow:0 4px 20px rgba(0,85,170,0.35);}
+.btn-sedo{display:inline-block;background:linear-gradient(135deg,#0055aa,#0088ff);color:var(--white);font-weight:700;font-size:15px;padding:14px 0;border-radius:50px;width:180px;text-align:center;text-decoration:none;transition:transform 0.2s,box-shadow 0.2s;box-shadow:0 4px 20px rgba(0,85,170,0.35);}
 .btn-sedo:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(0,85,170,0.5);}
-.btn-atom{display:inline-block;background:linear-gradient(135deg,#6f42c1,#a855f7);color:var(--white);font-weight:700;font-size:15px;padding:16px 28px;border-radius:50px;text-decoration:none;transition:transform 0.2s,box-shadow 0.2s;box-shadow:0 4px 20px rgba(111,66,193,0.35);}
+.btn-atom{display:inline-block;background:linear-gradient(135deg,#6f42c1,#a855f7);color:var(--white);font-weight:700;font-size:15px;padding:14px 0;border-radius:50px;width:180px;text-align:center;text-decoration:none;transition:transform 0.2s,box-shadow 0.2s;box-shadow:0 4px 20px rgba(111,66,193,0.35);}
 .btn-atom:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(111,66,193,0.5);}
+.btn-godaddy{display:inline-block;background:linear-gradient(135deg,#00A65A,#00CC6A);color:var(--white);font-weight:700;font-size:14px;padding:14px 0;border-radius:50px;text-decoration:none;transition:transform 0.2s,box-shadow 0.2s;box-shadow:0 4px 20px rgba(0,166,90,0.35);width:180px;text-align:center;}
+.btn-godaddy:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(0,166,90,0.5);}
 
 /* STATS */
 .stats{position:relative;z-index:1;display:flex;justify-content:center;flex-wrap:wrap;border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--navy-mid);margin-bottom:70px;}
@@ -167,7 +168,7 @@ footer strong{color:var(--off-white);}
   <div class="ticker-track">
     <span class="ticker-label">🔵 Germany AI News</span>
     <div class="ticker-content" id="ticker-content">
-      <a href="https://news.google.com/search?q=India+AI+artificial+intelligence&hl=en-IN" target="_blank">Loading latest India AI headlines...</a>
+      <a href="https://news.google.com/search?q=Germany+AI+artificial+intelligence" target="_blank">Loading latest Germany AI headlines...</a>
     </div>
   </div>
 </div>
@@ -208,27 +209,30 @@ footer strong{color:var(--off-white);}
   <!-- GEO MESSAGE -->
   <div id="geo-message"></div>
 
-  <!-- DOMAIN VALUE COUNTER -->
-  <div class="value-counter">
-    <div class="value-label">📈 Estimated Domain Value</div>
-    <div class="value-num" id="value-counter">$0</div>
-    <div class="value-sub">Based on comparable Geo-AI sales data</div>
-  </div>
-
-  <!-- PRICE -->
-  <div class="price-block">
-    <div class="price-label">Buy It Now</div>
-    <div class="price-bin">$999</div>
-    <div class="price-offer">Make Offer from <span>$599</span></div>
+  <!-- DOMAIN VALUE COUNTER + PRICE — equal size side by side -->
+  <div style="display:flex;gap:16px;justify-content:center;align-items:stretch;flex-wrap:wrap;margin-bottom:28px;">
+    <div class="value-counter">
+      <div class="value-label">📈 Estimated Value</div>
+      <div class="value-num" id="value-counter">$4,685</div>
+      <div class="value-sub">USD &nbsp;·&nbsp; <strong style="color:#4dff88;">Dynadot.com</strong></div>
+    </div>
+    <div class="price-block">
+      <div class="price-label">Buy It Now</div>
+      <div class="price-bin">$999</div>
+      <div class="price-offer">Make Offer from <span>$599</span></div>
+    </div>
   </div>
 
   <div class="cta-group">
-    <a href="https://www.afternic.com/domain/germanyonai.com" target="_blank" class="btn-primary">🔒 Afternic — $999</a>
+    <a href="https://www.afternic.com/domain/germanyonai.com" target="_blank" class="btn-primary">🔒 Afternic</a>
     <a href="https://sedo.com/search/details/?domain=germanyonai.com" target="_blank" class="btn-sedo">🌐 Sedo</a>
-    <a href="https://atom.com/domain/germanyonai.com" target="_blank" class="btn-atom">⚡ Atom</a>
-    <a href="#make-offer" class="btn-secondary">💬 Make an Offer</a>
+    <a href="https://www.atom.com/name/GermanyOnAi" target="_blank" class="btn-atom">⚡ Atom</a>
+    <a href="https://www.godaddy.com/en-in/domainsearch/find?domainToCheck=germanyonai.com" target="_blank" class="btn-godaddy">🟢 GoDaddy</a>
   </div>
-  <p class="contact-note">Secure transfer via Afternic / Sedo / Atom &nbsp;·&nbsp; Escrow available</p>
+  <div style="margin-top:16px;">
+    <a href="#make-offer" class="btn-secondary">💬 Make a Direct Offer</a>
+  </div>
+  <p class="contact-note" style="margin-top:12px;">Secure transfer via Afternic / Sedo / Atom / GoDaddy &nbsp;·&nbsp; Escrow available</p>
 </section>
 
 <!-- STATS -->
@@ -257,13 +261,13 @@ footer strong{color:var(--off-white);}
 
 <!-- WHY THIS DOMAIN -->
 <div class="section">
-  <div class="section-eyebrow">Why IndiaOnAI.com</div>
+  <div class="section-eyebrow">Why GermanyOnAI.com</div>
   <div class="section-title">A name the market will remember.</div>
   <div class="cards">
     <div class="card">
       <div class="card-icon">🇮🇳</div>
       <h3>Geo + Tech = Category King</h3>
-      <p>Geo-AI domains are the fastest appreciating naming category in premium domain investing. IndiaOnAI.com owns the most valuable intersection: the world's largest democracy meets the AI era.</p>
+      <p>Geo-AI domains are the fastest appreciating naming category in premium domain investing. GermanyOnAI.com owns the most valuable intersection: Europe's largest economy meets the AI era.</p>
     </div>
     <div class="card">
       <div class="card-icon">🔍</div>
@@ -322,16 +326,16 @@ footer strong{color:var(--off-white);}
       </thead>
       <tbody id="sales-tbody">
         <tr>
-          <td><span class="domain-name">germanyholidays.com</span></td>
-          <td><span class="sale-price">$899</span></td>
-          <td><span class="sale-date">2026-05-12</span></td>
-          <td><span class="sale-venue">Sedo</span></td>
+          <td><span class="domain-name">organic-germany.com</span></td>
+          <td><span class="sale-price">$1,101</span></td>
+          <td><span class="sale-date">2026-06-12</span></td>
+          <td><span class="sale-venue">DropCatch</span></td>
         </tr>
         <tr>
-          <td><span class="domain-name">deutschlandai.com</span></td>
-          <td><span class="sale-price">$750</span></td>
-          <td><span class="sale-date">2026-04-28</span></td>
-          <td><span class="sale-venue">Afternic</span></td>
+          <td><span class="domain-name">germanyonthebrain.com</span></td>
+          <td><span class="sale-price">$1,249</span></td>
+          <td><span class="sale-date">2026-01-03</span></td>
+          <td><span class="sale-venue">GoDaddy</span></td>
         </tr>
       </tbody>
     </table>
@@ -454,19 +458,7 @@ function startCountdown() {
 }
 startCountdown();
 
-// ── 3. DOMAIN VALUE COUNTER — animates to $2,450 ──
-function animateCounter() {
-  const target = 2450;
-  const el = document.getElementById('value-counter');
-  let current = 0;
-  const step = Math.ceil(target / 120);
-  const timer = setInterval(() => {
-    current = Math.min(current + step, target);
-    el.textContent = '$' + current.toLocaleString();
-    if (current >= target) clearInterval(timer);
-  }, 18);
-}
-setTimeout(animateCounter, 800);
+// ── 3. DOMAIN VALUE — static Dynadot valuation displayed ──
 
 // ── 4. GEO DETECTION ──
 async function detectGeo() {
@@ -487,7 +479,7 @@ async function detectGeo() {
     const msg = messages[country] || `🌍 Welcome from ${country}! Germany AI revolution needs a global brand. This is it.`;
     document.getElementById('geo-message').textContent = msg;
   } catch(e) {
-    document.getElementById('geo-message').textContent = '🌍 Welcome! Indias AI revolution needs a global brand. This is it.';
+    document.getElementById('geo-message').textContent = '🌍 Welcome! Germany AI revolution needs a global brand. This is it.';
   }
 }
 detectGeo();
